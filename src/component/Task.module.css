@@ -1,0 +1,66 @@
+.task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    background: var(--gray-400);
+    color: var(--gray-100);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+
+.task button {
+    border: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: color .1s, background-color .1s;
+}
+
+.buttonChecked,
+.buttonUnChecked {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.buttonChecked {
+    color: var(--gray-100);
+    background: var(--purple);
+}
+
+.buttonChecked:hover {
+    background: var(--purple-dark);
+}
+
+.buttonUnChecked {
+    background: transparent;
+    color: var(--blue);
+}
+
+.buttonUnChecked:hover {
+    background: var(--gray-500);
+    color: var(--blue-dark);
+}
+
+.buttonTrash {
+    background: transparent;
+    border-radius: 8px;
+    padding: 0.3rem;
+    line-height: 1;
+    color: var(--gray-100);
+}
+
+.buttonTrash:hover {
+    background: var(--gray-500);
+    color: var(--danger);
+}
+
+.labelChecked {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}

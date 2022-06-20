@@ -1,5 +1,20 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 736px;
+    }
+}
+
 .container {
-    width: 46rem;
     margin: -2rem auto 0;
 }
 
@@ -21,8 +36,7 @@
 }
 
 .newTask button {
-    line-height: 1.4;
-    background: var(--blue);
+    background: var(--blue-dark);
     color: var(--gray-100);
     border: 0;
     padding: 1rem;
@@ -30,10 +44,13 @@
     cursor: pointer;
 
     transition: background-color .1s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .newTask button:hover {
-    background: var(--blue-dark);
+    background: var(--blue);
 
 }
 
@@ -46,9 +63,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     font-size: 0.875rem;
-    border-bottom: 1px solid var(--gray-400);
 }
 
 
@@ -69,4 +85,22 @@
 
 .taskDone {
     color: var(--purple)
+}
+
+.empty {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    padding: 4rem 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-300);
+}
+
+.empty img {
+    margin-bottom: 1rem;
+    border: none;
+
 }
