@@ -11,15 +11,7 @@ import { v4 as uuidV4 } from 'uuid';
 
 function App() {
 
-  const [tasks, setTasks] = useState<ITask[]>([{
-    id: uuidV4(),
-    checked: false,
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati, fugit vitae necessitatibus porro aliquid facilis. Harum veniam ipsa magni reprehenderit consectetur accusamus optio officiis, rerum reiciendis libero alias ex!"
-  }, {
-    id: uuidV4(),
-    checked: true,
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati, fugit vitae necessitatibus porro aliquid facilis. Harum veniam ipsa magni reprehenderit consectetur accusamus optio officiis, rerum reiciendis libero alias ex!"
-  }])
+  const [tasks, setTasks] = useState<ITask[]>([])
 
   const [newTaskText, setNewTaskText] = useState("");
 
